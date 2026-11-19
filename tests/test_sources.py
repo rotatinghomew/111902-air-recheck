@@ -34,7 +34,11 @@ class SourceContract(unittest.TestCase):
 
     def test_source_relationships(self):
         self.references('observations', 'station', 'stations', 'station')
-        self.references('calibration', 'revokes', 'calibration', 'certificate')
-        self.references('dispatch', 'option', 'patrol_options', 'option')
+        self.references('certificates', 'reference', 'references', 'reference')
+        self.references('certificates', 'revokes', 'certificates', 'certificate')
+        self.references('dispatch', 'route', 'routes', 'route')
+        self.references('route_receipts', 'route', 'routes', 'route')
+        self.assertGreater(len(self.rows('observations')), 4000)
+        self.assertTrue(any(row['parent'] is not None for row in self.rows('references')))
         unavailable = [row for row in self.rows('observations') if row['value'] is None]
         self.assertEqual({row['flag'] for row in unavailable}, {'停机', '低于检出'})
