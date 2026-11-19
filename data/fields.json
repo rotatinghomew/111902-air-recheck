@@ -1,0 +1,133 @@
+{
+  "stations": {
+    "station": [
+      "str"
+    ],
+    "area": [
+      "str"
+    ],
+    "kind": [
+      "str"
+    ],
+    "group": [
+      "str"
+    ],
+    "reference": [
+      "str"
+    ]
+  },
+  "calibration": {
+    "certificate": [
+      "str"
+    ],
+    "station": [
+      "str"
+    ],
+    "from": [
+      "str"
+    ],
+    "until": [
+      "str"
+    ],
+    "offset_band": [
+      "NoneType",
+      "list"
+    ],
+    "issued": [
+      "str"
+    ],
+    "revokes": [
+      "NoneType",
+      "str"
+    ]
+  },
+  "observations": {
+    "reading": [
+      "str"
+    ],
+    "station": [
+      "str"
+    ],
+    "observed": [
+      "str"
+    ],
+    "value": [
+      "NoneType",
+      "int"
+    ],
+    "flag": [
+      "str"
+    ],
+    "lod": [
+      "int"
+    ]
+  },
+  "zones": {
+    "area": [
+      "str"
+    ],
+    "planned_hours": [
+      "list"
+    ],
+    "min_hours": [
+      "int"
+    ],
+    "min_groups": [
+      "int"
+    ],
+    "alert_threshold": [
+      "int"
+    ],
+    "exposure_weight": [
+      "float"
+    ]
+  },
+  "calls": {
+    "call": [
+      "str"
+    ],
+    "area": [
+      "str"
+    ],
+    "from": [
+      "str"
+    ],
+    "until": [
+      "str"
+    ],
+    "group": [
+      "str"
+    ]
+  },
+  "patrol_options": {
+    "option": [
+      "str"
+    ],
+    "van": [
+      "str"
+    ],
+    "areas": [
+      "list"
+    ],
+    "starts": [
+      "str"
+    ],
+    "ends": [
+      "str"
+    ]
+  },
+  "dispatch": {
+    "option": [
+      "str"
+    ],
+    "status": [
+      "str"
+    ],
+    "receipt_time": [
+      "str"
+    ],
+    "covered_hours": [
+      "list"
+    ]
+  }
+}

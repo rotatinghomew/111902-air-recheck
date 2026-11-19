@@ -1,0 +1,257 @@
+{
+  "synthetic": true,
+  "tables": {
+    "stations": [
+      {
+        "station": "S1",
+        "area": "西港",
+        "kind": "fixed",
+        "group": "G1",
+        "reference": "R1"
+      },
+      {
+        "station": "S2",
+        "area": "西港",
+        "kind": "fixed",
+        "group": "G1",
+        "reference": "R1"
+      },
+      {
+        "station": "S3",
+        "area": "东渠",
+        "kind": "fixed",
+        "group": "G2",
+        "reference": "R2"
+      },
+      {
+        "station": "M1",
+        "area": "西港",
+        "kind": "targeted",
+        "group": "G3",
+        "reference": "R1"
+      }
+    ],
+    "calibration": [
+      {
+        "certificate": "C1",
+        "station": "S1",
+        "from": "2026-11-01T00:00",
+        "until": "2026-11-30T00:00",
+        "offset_band": [
+          -2,
+          2
+        ],
+        "issued": "2026-11-01",
+        "revokes": null
+      },
+      {
+        "certificate": "C2",
+        "station": "S2",
+        "from": "2026-11-01T00:00",
+        "until": "2026-11-30T00:00",
+        "offset_band": [
+          -3,
+          3
+        ],
+        "issued": "2026-11-01",
+        "revokes": null
+      },
+      {
+        "certificate": "C3",
+        "station": "S3",
+        "from": "2026-11-01T00:00",
+        "until": "2026-11-30T00:00",
+        "offset_band": [
+          -1,
+          2
+        ],
+        "issued": "2026-11-01",
+        "revokes": null
+      },
+      {
+        "certificate": "C4",
+        "station": "M1",
+        "from": "2026-11-01T00:00",
+        "until": "2026-11-30T00:00",
+        "offset_band": [
+          -5,
+          5
+        ],
+        "issued": "2026-11-01",
+        "revokes": null
+      },
+      {
+        "certificate": "C5",
+        "station": "S1",
+        "from": "2026-11-17T23:00",
+        "until": "2026-11-18T02:00",
+        "offset_band": null,
+        "issued": "2026-11-18",
+        "revokes": "C1"
+      }
+    ],
+    "observations": [
+      {
+        "reading": "V1",
+        "station": "S1",
+        "observed": "2026-11-17T23:00",
+        "value": 64,
+        "flag": "有效",
+        "lod": 5
+      },
+      {
+        "reading": "V2",
+        "station": "S2",
+        "observed": "2026-11-17T23:00",
+        "value": 62,
+        "flag": "有效",
+        "lod": 5
+      },
+      {
+        "reading": "V3",
+        "station": "S1",
+        "observed": "2026-11-18T00:00",
+        "value": null,
+        "flag": "停机",
+        "lod": 5
+      },
+      {
+        "reading": "V4",
+        "station": "S1",
+        "observed": "2026-11-18T01:00",
+        "value": 56,
+        "flag": "有效",
+        "lod": 5
+      },
+      {
+        "reading": "V5",
+        "station": "S2",
+        "observed": "2026-11-18T01:00",
+        "value": 50,
+        "flag": "有效",
+        "lod": 5
+      },
+      {
+        "reading": "V6",
+        "station": "S3",
+        "observed": "2026-11-18T00:00",
+        "value": null,
+        "flag": "低于检出",
+        "lod": 5
+      },
+      {
+        "reading": "V7",
+        "station": "M1",
+        "observed": "2026-11-18T01:00",
+        "value": 60,
+        "flag": "有效",
+        "lod": 7
+      },
+      {
+        "reading": "V8",
+        "station": "M1",
+        "observed": "2026-11-18T01:00",
+        "value": 61,
+        "flag": "有效",
+        "lod": 7
+      }
+    ],
+    "zones": [
+      {
+        "area": "西港",
+        "planned_hours": [
+          23,
+          0,
+          1,
+          2
+        ],
+        "min_hours": 3,
+        "min_groups": 1,
+        "alert_threshold": 50,
+        "exposure_weight": 0.6
+      },
+      {
+        "area": "东渠",
+        "planned_hours": [
+          23,
+          0,
+          1,
+          2
+        ],
+        "min_hours": 3,
+        "min_groups": 1,
+        "alert_threshold": 50,
+        "exposure_weight": 0.4
+      }
+    ],
+    "calls": [
+      {
+        "call": "Q1",
+        "area": "西港",
+        "from": "2026-11-17T23:00",
+        "until": "2026-11-18T02:00",
+        "group": "episode-west"
+      },
+      {
+        "call": "Q2",
+        "area": "西港",
+        "from": "2026-11-18T00:00",
+        "until": "2026-11-18T02:00",
+        "group": "episode-west"
+      },
+      {
+        "call": "Q3",
+        "area": "东渠",
+        "from": "2026-11-18T00:00",
+        "until": "2026-11-18T02:00",
+        "group": "episode-east"
+      }
+    ],
+    "patrol_options": [
+      {
+        "option": "P1",
+        "van": "VAN1",
+        "areas": [
+          "西港"
+        ],
+        "starts": "2026-11-18T00:20",
+        "ends": "2026-11-18T01:45"
+      },
+      {
+        "option": "P2",
+        "van": "VAN1",
+        "areas": [
+          "东渠"
+        ],
+        "starts": "2026-11-18T00:10",
+        "ends": "2026-11-18T01:20"
+      },
+      {
+        "option": "P3",
+        "van": "VAN2",
+        "areas": [
+          "西港",
+          "东渠"
+        ],
+        "starts": "2026-11-18T01:20",
+        "ends": "2026-11-18T02:00"
+      }
+    ],
+    "dispatch": [
+      {
+        "option": "P1",
+        "status": "已出车",
+        "receipt_time": "2026-11-18T00:25",
+        "covered_hours": []
+      },
+      {
+        "option": "P1",
+        "status": "已返回",
+        "receipt_time": "2026-11-18T01:49",
+        "covered_hours": [
+          "2026-11-18T00:00"
+        ]
+      }
+    ]
+  }
+}
